@@ -13,6 +13,17 @@ todoValue.addEventListener("keypress", function(e){
     }
 });
 
+ReadToDoItems();
+function ReadToDoItems(){
+    console.log(todoData);
+    todoData.array.forEach(element=> {
+        let li=document.createElement("li");
+        const todoItems = `<div ondblclick="CompleteTodoItem(this)>${element.item}</div>`;
+        li.innerHTML=todoItems;
+        listItems.appendChild(li);
+    });
+}
+
 function CreateToDoData(){
     if(todoValue.value === ""){
         alert("Please Enter your todo text!");
@@ -35,6 +46,12 @@ function CreateToDoData(){
 function CompleteTodoItem(e) {
     if(e.parentElement.querySelector("div").style.textDecoration === ""){
         e.parentElement.querySelector("div").style.textDecoration="line-through";
+
+        todoData.forEach(element) => {
+            if(e.parentElement.querySelector("div").innerText.trim()==element.item){
+                element.status = true;
+            }
+        });
     }
 }
 
