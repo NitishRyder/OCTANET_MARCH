@@ -11,6 +11,13 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    src: url(../Task-2/images/checklistbg.jpg);
+}
+.bg {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
 }
 
 .container{
