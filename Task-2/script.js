@@ -8,7 +8,7 @@ function CreateToDoData(){
         todoValue.focus();
     }
     let li=document.createElement("li");
-    const todoItems = "<div>Hello</div>";
+    const todoItems = `<div>${todoValue.value}</div>`;
 
     li.innerHTML=todoItems;
     listItems.appendChild(li);

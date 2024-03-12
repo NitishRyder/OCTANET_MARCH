@@ -6,22 +6,19 @@
 }
 
 body{
-    background: #78c1f3;
+    background-image: url(../Task-2/images/todobg.jpg);
+    background-size: cover;
+    /*background: #78c1f3;*/
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    src: url(../Task-2/images/checklistbg.jpg);
 }
-.bg {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    
+#bgvector{
+    margin-left: 27%;
 }
-
 .container{
-    background:#ffffff;
+    background:#b2daae;
     padding: 25px;
     width: 500px;
     border-radius: 10px;    
@@ -53,7 +50,7 @@ body{
     height: 55px;
     width: 55px;
     padding: 15px;
-    background: limegreen;
+    background: rgb(255, 142, 37);
     border-radius: 40px;
 }
 
